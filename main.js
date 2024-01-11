@@ -22,3 +22,21 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+
+// toggle text
+document.getElementById('darkmode-toggle').addEventListener('click')
+
+let h1 = document.getElementById('logo');
+  let ausgabe = document.getElementById('logo');
+  h1.addEventListener('mouseover', mouseOver);
+  h1.addEventListener('mouseout', mouseOut);
+
+  function mouseOver() {
+    ausgabe.innerHTML = ' ';
+    h1.innerHTML = 'Shop';
+  }
+
+  function mouseOut() {
+    ausgabe.innerHTML = ' ';
+	h1.innerHTML = 'Logo';
+  }
